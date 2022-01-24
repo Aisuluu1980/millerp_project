@@ -1,0 +1,124 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}MILL ERP{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'js/jquery.min.js' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   {% block styles %}{% endblock %}
+</head>
+<body>
+
+<header>
+<nav class="navbar navbar-expand-md">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"  id="navbarTop">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <i class="fa fa-envelope mt-1" aria-hidden="true"></i> admin@gmail.com
+              </li>
+            </ul>
+        </div>
+        <div class="navbar-text">
+            <ul class="nav mom-social-icons">
+                <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+		        <li><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<nav id="navigation" class="navbar sticky-top navbar-expand-lg navbar-light bg-white" role="navigation">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop2" aria-controls="navbarTop2" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTop2">
+        <ul class="navbar-nav mr-auto">
+            <a href="index.html" rel="index">
+            <img src="{% static 'logo.jpg' %}" alt="millERP" width="300" height="80"></a>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+             <a class="nav-link" aria-hidden="true" href="{% url 'webapp:index' %}">HOME</a>
+             <a class="nav-link" aria-hidden="true" href="{% url 'webapp:about' %}">ABOUT ERP</a>
+           <div class="dropdown">
+             <a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-hidden="true" href="#">MANUFACTURING</a>
+             <div class="dropdown-content" aria-labelledby="navbarDropdown">
+                <a href="{% url 'webapp:procurement' %}">Procurement</a>
+                <a href="{% url 'webapp:finance' %}">Finance and controlling</a>
+                <a href="{% url 'webapp:safety' %}">Safety</a>
+                <a href="{% url 'webapp:asset' %}">Asset</a>
+                <a href="{% url 'webapp:hr' %}">Human Resourses</a>
+                <a href="{% url 'webapp:document' %}">Document</a>
+                <a href="{% url 'webapp:mobile' %}">Mobile</a>
+                <a href="{% url 'webapp:migration' %}">Migration</a>
+                <a href="{% url 'webapp:customer' %}">Customer</a>
+            </div>
+           </div>
+           <div class="dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-hidden="true">PROJECTS</a>
+            <div class="dropdown-content" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Ongoing Projects</a>
+              <a class="dropdown-item" href="#">Project Archive</a>
+            </div>
+            </div>
+              <a class="nav-link" aria-hidden="true" href="#">CLIENTS</a>
+              <a class="nav-link" aria-hidden="true" href="{% url 'webapp:contact' %}">CONTACT US</a>
+        </ul>
+      </div>
+    </div>
+</nav>
+{% block menu %}{% endblock %}
+</header>
+
+
+<div class="container">
+
+<div id="back-to-top">
+  <i class="fa fa-chevron-up"></i>
+</div>
+{% block content %}{% endblock %}
+</div>
+
+{% block footer %}
+<div class="company_name mt-5 row justify-content-center">
+   <div class="col-sm-8 col-lg-4 mb-3">
+       <h6><span>ABOUT</span></h6>
+         <p>MILL International Holdings Group Limited, a<br>multinational group owning various companies<br>
+             located in USA, South Korea< GCC, UK and Kyrgyz Republic.</p>
+        <a href="#">Learn More</a>
+   </div>
+    <div class="col-sm-8 col-lg-4 mb-3">
+        <h6 class="ml-3"><span>CONTACT</span></h6>
+        <ul>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">Bishkek</a></li>
+            <li><a href="#">Seul</a></li>
+            <li><a href="#">UK</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container_footer">
+    <p style="font-size: small; padding-bottom: 15px;">Copyright &copy; 2021|MILL International Holdings.All right reserved.</p>
+</div>
+{% endblock %}
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+{% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}CONTACT{% endblock %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<hr>
+<h6 style="font-weight: initial">YOU ARE HERE: HOME >> CONTACT</h6>
+<hr>
+<h1><span>Bishkek offices</span></h1>
+  <div class="container_contact row m-1 mt-5">
+   <div class="contact">
+<h6>Asanbai office</h6>
+   <p><b>Address:</b>Bishkek, 7-15-16</p>
+   <p><b>Contact:</b>+996 775 775775</p>
+   <p><b>Email:</b>asanbai@gmail.com</p>
+   <p><b>Contact person:</b>Azimov Azim</p>
+</div>
+   <div class="contact ml-auto">
+<h6>University office</h6>
+   <p><b>Address:</b>Bishkek, Turusbekova, 296-63</p>
+   <p><b>Contact:</b>+996 553 889889</p>
+   <p><b>Email:</b>Bishkek, university@gmail.com</p>
+   <p><b>Contact person:</b>Sanjar</p>
+</div>
+   <div class="contact ml-auto">
+<h6>Dzhal office</h6>
+   <p><b>Address:</b>Bishkek, Dzhal, 95-86</p>
+   <p><b>Contact:</b>+996 550 555555</p>
+   <p><b>Email:</b>dzhal@gmail.com</p>
+   <p><b>Contact person:</b>Dimash</p>
+</div>
+   </div>
+
+
+  <div class="container_contact row m-1 mt-5 justify-content-start">
+   <div class="contact mt-4 mr">
+<h1 class="mb-5"><span>Osh office</span></h1>
+<h6>South office</h6>
+   <p><b>Address:</b>Osh, Ibraimova street, 26-37</p>
+   <p><b>Contact:</b>+996 772 777777</p>
+   <p><b>Email:</b>south@gmail.com</p>
+   <p><b>Contact person:</b>Azimov Azim</p>
+</div>
+   <div class="contact mt-4 ml-auto">
+<h1 class="mb-5"><span>Karakol office</span></h1>
+   <h6>West office</h6>
+   <p><b>Address:</b>Karakol, Aitmatov str, 28-15</p>
+   <p><b>Contact:</b>+996 555 555555</p>
+   <p><b>Email:</b>karakol@gmail.com</p>
+   <p><b>Contact person:</b>Aidarov Aidar</p>
+</div>
+ </div>
+<h1><span>Fill the contact form</span></h1>
+
+  <div class="container text-center">
+    <div class="form_text mt-5" id="form_container">
+ <form method="post" novalidate>
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-4">
+        {{ form.name|as_crispy_field }}
+      </div>
+      <div class="col-4">
+        {{ form.email|as_crispy_field }}
+      </div>
+      <div class="col-4">
+        {{ form.phone|as_crispy_field }}
+      </div>
+    </div>
+    {{ form.subject|as_crispy_field }}
+    {{ form.message|as_crispy_field }}
+    <button type="submit" class="btn btn_msg">Send message</button>
+  </form>
+    </div>
+  </div>
+{% endblock %}

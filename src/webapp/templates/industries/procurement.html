@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block title %}PROCUREMENT{% endblock %}
+
+
+{% block content %}
+<hr>
+<h6 style="font-weight: initial">YOU ARE HERE: HOME >> PROCUREMENT</h6>
+<hr>
+<h1><span>Procurement</span></h1>
+<div class="row mt-5 pb-2">
+  <div class="btns col-3 mr-n1">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link_btn btn-lg active" id="v-pills-warehous-tab" data-toggle="pill" href="#v-pills-warehous" role="tab" aria-controls="v-pills-warehous" aria-selected="true">Management Warehous</a>
+      <a class="nav-link_btn btn-lg" id="v-pills-supply-tab" data-toggle="pill" href="#v-pills-supply" role="tab" aria-controls="v-pills-supply" aria-selected="false">Supply Management</a>
+      <a class="nav-link_btn btn-lg" id="v-pills-benefits-tab" data-toggle="pill" href="#v-pills-benefits" role="tab" aria-controls="v-pills-benefits" aria-selected="false">Benefits</a>
+      <a class="nav-link_btn btn-lg" id="v-pills-logistic-tab" data-toggle="pill" href="#v-pills-logistic" role="tab" aria-controls="v-pills-logictic" aria-selected="false">Logictics</a>
+    </div>
+  </div>
+  <div class="text_btns col-9 ml-n2">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-plan" role="tabpanel" aria-labelledby="v-pills-warehous-tab">
+           <h6 class="font-weight-lighter">SAPHIR ERP Warehouse Management </h6>
+            <ul>
+                <li class="warehous">Improve inventory accuracy</li>
+                <li class="warehous">Ensure constant availability of goods</li>
+                <li class="warehous">Reduce inventory costs</li>
+                <li class="warehous">Improve shipping speed and accuracy</li>
+                <li class="warehous">Control the activities of warehouse storekeepers in real time</li>
+                <li class="warehous">Improve warehouse productivity</li>
+            </ul>
+       </div>
+      <div class="tab-pane fade" id="v-pills-supply" role="tabpanel" aria-labelledby="v-pills-supply-tab">
+        <h6 class="font-weight-lighter">SAPHIR ERP Supply Chain Management.</h6>
+        <ul>
+            <li class="supply">automation of orders for the supply of materials</li>
+            <li class="supply">effective management of both supply and sales networks</li>
+            <li class="supply">optimization of sales, warehouse, and routine business processes</li>
+            <li class="supply">improvement of the speed and transparency of all operations</li>
+            <li class="supply">cutting costs on transportation with efficient fleet management</li>
+            <li class="supply">calculating the cost of transportation for clients</li>
+            <li class="supply">speeding up the passage of goods in a warehouse</li>
+        </ul>
+       </div>
+      <div class="tab-pane fade" id="v-pills-benefits" role="tabpanel" aria-labelledby="v-pills-benefits-tab">
+        <h6 class="font-weight-lighter">Benefits of using SAPHIR ERP SCM</h6>
+        <p>Increased transparency in the delivery process
+            Effective management, forecasting, and planning of supply and demand processes
+            Optimization of inventory, order fulfillment, and shipment of goods
+            Rapid delivery of important information to all stakeholders
+            Improved communication and increased collaboration between business areas
+            Improved production efficiency and minimized issues with a product quality
+        </p>
+        <ul>
+            <li class="benefits">increase employee productivity</li>
+            <li class="benefits">ensure transparency in the warehouse</li>
+            <li class="benefits">speed up order processing and material purchasing</li>
+            <li class="benefits">reduce the number of errors in the delivery of goods</li>
+        </ul>
+       </div>
+
+  <div class="tab-pane fade" id="v-pills-logistic" role="tabpanel" aria-labelledby="v-pills-logistic-tab">
+        <h6 class="font-weight-lighter">SAPHIR ERP Logistics</h6>
+            <ul>
+                <li class="logistic">Eliminate data redundancy and input errors</li>
+                <li class="logistic">Obtain full visibility of orders, shipments, and logistics processes</li>
+                <li class="logistic">Improve the flow of goods throughout the entire supply chain network</li>
+                <li class="logistic">Optimize freight costs and speed up data processes</li>
+                <li class="logistic">Increase the turnover of goods and traffic</li>
+            </ul>
+            <ul>
+                <li class="logistic">Collect and use traffic data for better transportation efficiency</li>
+                <li class="logistic">Save more by utilizing the new transparency and reporting options</li>
+                <li class="logistic">Identify infrastructure bottlenecks and breakdowns in advance and avoid them</li>
+                <li class="logistic">Collect and store business data in a single place where it is easily available for drivers, dispatchers, and managers</li>
+                <li class="logistic">Reduce idle time through route improvement and direct communication with the operators</li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

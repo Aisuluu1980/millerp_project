@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}FINANCE{% endblock %}
+
+
+{% block content %}
+<hr>
+<h6 style="font-weight: initial">YOU ARE HERE: HOME >> FINANCE AND CONTROLLING</h6>
+<hr>
+<h1><span>Finance and Controlling</span></h1>
+<div class="row mt-5 pb-2">
+  <div class="btns col-3 mr-n1">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link_btn btn-lg active" id="v-pills-plan-tab" data-toggle="pill" href="#v-pills-plan" role="tab" aria-controls="v-pills-plan" aria-selected="true">Planning Business</a>
+      <a class="nav-link_btn btn-lg" id="v-pills-budget-tab" data-toggle="pill" href="#v-pills-budget" role="tab" aria-controls="v-pills-budget" aria-selected="false">Budgeting</a>
+      <a class="nav-link_btn btn-lg" id="v-pills-costing-tab" data-toggle="pill" href="#v-pills-costing" role="tab" aria-controls="v-pills-costing" aria-selected="false">Costing</a>
+      <!--<a class="nav-link_btn btn-lg" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"></a>-->
+    </div>
+  </div>
+  <div class="text_btns col-9 ml-n2">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-plan" role="tabpanel" aria-labelledby="v-pills-plan-tab">
+           <h6 class="font-weight-lighter">SAPHIR ERP Business Planning</h6>
+            <ul>
+                <li class="plan">Support of state-of-the-art business processes and technologies</li>
+                <li class="plan">Faster planning cycles covered by computational algorithms</li>
+                <li class="plan">End-to-end supply chain visibility</li>
+                <li class="plan">Connected planning processes thanks to a unified data model</li>
+            </ul>
+       </div>
+      <div class="tab-pane fade" id="v-pills-budget" role="tabpanel" aria-labelledby="v-pills-budget-tab">
+        <h6 class="font-weight-lighter">SAPHIRE ERP budget management system allows you to plan a budget on all revenues and costs, monitor the organization's cash flows, and avoid overspending
+         the planned budget.</h6>
+        <p>With SAPHIRE ERP budget management system our customers can:</p>
+        <ul>
+            <li class="budget">actively control their budgets</li>
+            <li class="budget">plan budgets for the required period (month, quarter, and year)</li>
+            <li class="budget">keep track of receipts/expenditures of budgetary funds</li>
+            <li class="budget">evaluate the efficiency of budget spendings</li>
+            <li class="budget">prepare reports on the execution of budgets</li>
+        </ul>
+       </div>
+      <div class="tab-pane fade" id="v-pills-costing" role="tabpanel" aria-labelledby="v-pills-costing-tab">
+        <h6 class="font-weight-lighter">SAPHIR Product Lifecycle Costing</h6>
+            <ul>
+                <li class="costing">Increase profitability</li>
+                <li class="costing">Optimize costs and maximize revenue</li>
+                <li class="costing">Go to market quickly and cost-effectively</li>
+                <li class="costing">Analytics and reporting</li>
+            </ul>
+      </div>
+    <!--  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">##</div> -->
+    </div>
+  </div>
+</div>
+{% endblock %}

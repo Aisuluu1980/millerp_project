@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %}SAFETY{% endblock %}
+
+
+{% block content %}
+<hr>
+<h6 style="font-weight: initial">YOU ARE HERE: HOME >> SAFETY</h6>
+<hr>
+<h1><span>SAPHIR Environment, Health, and Safety Management</span></h1>
+<div class="row mt-5 pb-2">
+  <div class="btns col-3 mr-n1">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link_btn btn-lg active" id="v-pills-incident-tab" data-toggle="pill" href="#v-pills-incident" role="tab" aria-controls="v-pills-incident" aria-selected="true">Incident Management</a>
+      <a class="nav-link_btn btn-lg" id="v-pills-health-tab" data-toggle="pill" href="#v-pills-health" role="tab" aria-controls="v-pills-health" aria-selected="false">Health and safety management</a>
+      <a class="nav-link_btn btn-lg" id="v-pills-enviroment-tab" data-toggle="pill" href="#v-pills-enviroment" role="tab" aria-controls="v-pills-enviroment" aria-selected="false">Environment management</a>
+      <a class="nav-link_btn btn-lg" id="v-pills-compliance-tab" data-toggle="pill" href="#v-pills-compliance" role="tab" aria-controls="v-pills-compliance" aria-selected="false">Compliance management</a>
+      <a class="nav-link_btn btn-lg" id="v-pills-worker-tab" data-toggle="pill" href="#v-pills-worker" role="tab" aria-controls="v-pills-worker" aria-selected="false">Worker safety</a>
+    </div>
+  </div>
+  <div class="text_btns col-9 ml-n2">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-incident" role="tabpanel" aria-labelledby="v-pills-incident-tab">
+           <h6 class="font-weight-lighter">Incident management</h6>
+            <ul>
+                <li class="incident">Use standardized, workflow-enabled processes to investigate, track, and follow up on incidents</li>
+                <li class="incident">Business process integration</li>
+                <li class="incident">Improve visibility of EHS risks with automated global reporting and real-time analytics</li>
+            </ul>
+       </div>
+      <div class="tab-pane fade" id="v-pills-health" role="tabpanel" aria-labelledby="v-pills-health-tab">
+        <h6 class="font-weight-lighter">Health and safety management.</h6>
+        <p>With SAPHIRE ERP budget management system our customers can:</p>
+        <ul>
+            <li class="health">Establish a unified approach to EHS risk assessment including different risk analysis methods</li>
+            <li class="health">Manage chemicals effectively, including vendor safety management and hygiene monitoring</li>
+            <li class="health">Track employees' health and support a risk-based occupational health process that's integrated with central HR data</li>
+        </ul>
+       </div>
+      <div class="tab-pane fade" id="v-pills-enviroment" role="tabpanel" aria-labelledby="v-pills-enviroment-tab">
+        <h6 class="font-weight-lighter">Environment management</h6>
+            <ul>
+                <li class="enviroment">Manage air and water emissions to fulfill legal requirements</li>
+                <li class="enviroment">Calculate and aggregate emissions while fostering proactive data transparency and monitoring</li>
+                <li class="enviroment">Detect and communicate deviations, manage investigations, and track follow-up activities</li>
+            </ul>
+      </div>
+      <div class="tab-pane fade" id="v-pills-compliance" role="tabpanel" aria-labelledby="v-pills-compliance-tab">
+        <h6 class="font-weight-lighter">Compliance management</h6>
+            <ul>
+                <li class="compliance">Provide a central legal registry with integration to external content providers that update your processes with regulatory changes</li>
+                <li class="compliance">Assign legal requirements and internal policies to operations within your organization</li>
+                <li class="compliance">Establish consistent compliance workflows</li>
+            </ul>
+      </div>
+      <div class="tab-pane fade" id="v-pills-worker" role="tabpanel" aria-labelledby="v-pills-worker-tab">
+        <h6 class="font-weight-lighter">Worker safety</h6>
+            <ul>
+                <li class="worker">Integrate risk management and asset management processes</li>
+                <li class="worker">Pull risk information into work orders and propose relevant safety measures automatically</li>
+                <li class="worker">Provide standard icons and clear instructions on job cards</li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

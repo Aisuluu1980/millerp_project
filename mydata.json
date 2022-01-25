@@ -1,0 +1,112 @@
+[
+{
+  "model": "webapp.project",
+  "pk": 1,
+  "fields": {
+    "name": "Car Manufactoring",
+    "image": "projects_images/cars.png",
+    "created_date": "2022-01-25T11:58:11.599Z"
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 2,
+  "fields": {
+    "name": "Textile manufacturing",
+    "image": "projects_images/fabric.png",
+    "created_date": "2022-01-25T11:58:36.992Z"
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 3,
+  "fields": {
+    "name": "Dairy products",
+    "image": "projects_images/milk.jpeg",
+    "created_date": "2022-01-25T11:59:02.705Z"
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 4,
+  "fields": {
+    "name": "Global Business Park",
+    "image": "projects_images/project_4.jpg",
+    "created_date": "2022-01-25T11:59:30.372Z"
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 5,
+  "fields": {
+    "name": "Rainbow Country",
+    "image": "projects_images/project_3.png",
+    "created_date": "2022-01-25T11:59:50.550Z"
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 6,
+  "fields": {
+    "name": "Rozihub",
+    "image": "projects_images/project4.png",
+    "created_date": "2022-01-25T12:00:12.076Z"
+  }
+},
+{
+  "model": "webapp.news",
+  "pk": 1,
+  "fields": {
+    "title": "More Than One in Three Firms Burned by AI Bias",
+    "text": "Bias in AI systems can result in significant losses to companies, according to a new survey by an enterprise AI company.\r\n\r\nMore than one in three companies (36 percent) revealed they had suffered losses due to AI bias in one or several algorithms, noted the DataRobot survey of over 350 U.S. and U.K. technologists, including CIOs, IT directors, IT managers, data scientists and development leads who use or plan to use AI.\r\n\r\nOf the companies damaged by AI bias, more than half lost revenue (62 percent) or customers (61 percent), while nearly half lost employees (43 percent) and over a third incurred legal fees from litigation (35 percent), according to the research, which was conducted in collaboration with the World Economic Forum and global academic leaders.",
+    "created_at": "2022-01-25T11:47:13.902Z"
+  }
+},
+{
+  "model": "webapp.news",
+  "pk": 2,
+  "fields": {
+    "title": "Apple Wearables Holiday Sales Knock It Out of the Park",
+    "text": "The holiday shopping season was very good for Apple’s wearables business, according to a leading analyst of the company’s operations.\r\n\r\nMing-Chi Kuo of TFI Asset Management reported over the weekend that Apple sold 90 million AirPods during the final quarter of 2021, including 27 million of the latest version of the earbuds released in September.\r\n\r\nThe burst in sales will contribute to what Kuo estimates to be a 20 percent increase in revenue for wearables sold by Apple in 2021 over the previous year.\r\n\r\n“The earware has become popular, iconic, a must have device,” said Ramon T. Llamas, a research director at IDC.\r\n\r\n“For many iPhone owners, there is really only one choice for true wireless earbuds and that is AirPods,” he told TechNewsWorld.",
+    "created_at": "2022-01-25T11:47:58.443Z"
+  }
+},
+{
+  "model": "webapp.news",
+  "pk": 3,
+  "fields": {
+    "title": "CES 2022 Ramping Up Amid Brands Going Virtual",
+    "text": "Next week’s Consumer Electronics Show (CES) will not be canceled despite a surge of new Covid-19 infections. Though last-minute plans have made it a hybrid event with a physical show in Las Vegas and a digital component for those unable or unwilling to attend in person.\r\n\r\nIn the weeks leading up to the mega event, numerous companies reconsidered health issues for those attending the live show due to Covid-19’s rising resurge. But CES officials insist the show must go on.\r\n\r\nCES 2022 officially runs Jan. 5-8 with pre-show events for the media beginning Jan. 3. Last year’s CES event was an all-digital affair after CES officials canceled the physical show due to the pandemic. The last fully in-person CES show in 2020 attracted 171,268 attendees and 4,419 exhibitors.",
+    "created_at": "2022-01-25T11:48:37.547Z"
+  }
+},
+{
+  "model": "webapp.news",
+  "pk": 4,
+  "fields": {
+    "title": "CES 2022 Predictions",
+    "text": "This is the first week of the new year and, given how 2020 and 2021 were, I am feeling a bit of trepidation that 2022 could be worse.\r\n\r\nThe first big consumer event of 2022 is CES, and I still argue it’s way too soon after the holidays for a show that makes you want to spend more money just days after assessing the hole in our wallets from buying Christmas presents. But it is also the biggest consumer electronics show in the U.S., and it has historically been a wonderful place to see what is coming up for the new year.\r\n\r\nI am not going to CES this year. It’s too risky given the Covid spike, even though I have been vaccinated and boostered. Typically, every other year I get the flu at CES, even though I always get those vaccines as well.\r\n\r\nThis year, the venue could be particularly contagious as many attendees will have just been with family members and not worn masks or distanced — and hugged and shaken hands with a lot of people who are infected. If infected, attendees would be symptomatic about when CES starts and will not self-quarantine, making it too risky for me to attend.\r\n\r\nSo, let’s talk about what I expect to appear at CES, and we will close with my first product of the week for 2022: Dell’s Concept Luna, the first truly sustainable laptop design.",
+    "created_at": "2022-01-25T11:49:18.708Z"
+  }
+},
+{
+  "model": "webapp.news",
+  "pk": 5,
+  "fields": {
+    "title": "Remote Work Transformation Calls for Prioritizing Employee Tech Choices",
+    "text": "The global remote work revolution the pandemic caused has accelerated and reinforced the need for companies to prioritize the employee experience. This necessity includes providing tech equipment and consumer products from select retailers via a “choose your own device” (CYOD) reimbursement program.\r\n\r\nThat is the view from two top suppliers of computers and other electronic devices. Lenovo-Intel research found that a solid majority (72 percent) of employees feel that their employers need to focus more on listening to workers to get clarity on their tech needs. That response ranks in the top three things companies should do to improve the employee experience. \r\n\r\nThe Lenovo and Intel study, “Empowering Employees Through Technology Can Supercharge Returns,” is now one year old. But companies still face the ongoing challenges of outfitting their remote workforce with the technical tools they need to work away from the physical office productively, suggested Stefan Engel, Lenovo’s vice president and general manager of Visuals Business.\r\n\r\nTechNewsWorld discussed the implications of remote workers’ technical support needs with Engel, who sits in the catbird’s seat in seeing how employers are responding to the realities of the high-tech survey.",
+    "created_at": "2022-01-25T11:50:13.537Z"
+  }
+},
+{
+  "model": "webapp.message",
+  "pk": 1,
+  "fields": {
+    "name": "Aisl",
+    "email": "",
+    "phone": "",
+    "subject": "Test message",
+    "message": ""
+  }
+}
+]
